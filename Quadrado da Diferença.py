@@ -8,4 +8,4 @@ fim = b * b
 core = inicio - meio + fim #Lógica principal da operação
 print('O resultado é ',core) #Imprime resultado
 input('\nPressione qualquer tecla para sair')
-os.system('cls') #Limpa terminal
+os.system('cls' if os.name == 'nt' else 'clear') #Limpa terminal Multiplataforma
