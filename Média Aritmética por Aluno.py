@@ -15,5 +15,8 @@ while not stop:
     input('\nPressione ENTER para realizar o cálculo novamente\n')
     os.system('cls' if os.name =='nt' else 'clear') #Limpa terminal, cls em Windows NT caso contrário "clear" em UNIX Like
     
+    anterior = aluno #Exibe nome e média do aluno anterior
+    print(anterior, 'alcançou média' ,media_aluno, '\n')
+    
     if input == "":
         stop = True
