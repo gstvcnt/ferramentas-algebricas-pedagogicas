@@ -17,7 +17,7 @@ while not stop:
     
     media_aluno = soma / 4 #Realiza média aritmética de quatro bimestres
     
-    round(media_aluno, 2) #Arredonda para duas casas decimais
+    round(media_aluno, 2) #Arredonda, corta, para duas casas decimais
     
     if(media_aluno < media): #Define se o aluno está aprovado ou não
         print('\nREPROVADO: O Aluno' ,aluno, 'alcançou média' ,media_aluno, '\n')
@@ -31,6 +31,12 @@ while not stop:
     
     anterior = aluno #Exibe nome e média do aluno anterior
     print(anterior, 'alcançou média' ,media_aluno, '\n')
+    resultado = anterior,  media_aluno, #String que vai para o arquivo
+
+    arquivo = open("alunos.txt", "a") #Cria arquivo contendo média de todos os alunos
+    arquivo.write(str(resultado,))
+    arquivo.write('\n\n')
+    arquivo.close() #Fecha arquivo
     
     if input == "":
         stop = True
