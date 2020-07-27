@@ -29,9 +29,8 @@ while not stop:
     input('\nPressione ENTER para realizar o cálculo novamente \n')
     os.system('cls' if os.name =='nt' else 'clear') #Limpa terminal, cls em Windows NT caso contrário "clear" em UNIX Like
     
-    anterior = aluno #Exibe nome e média do aluno anterior
-    print(anterior, 'alcançou média' ,media_aluno, '\n')
-    resultado = anterior,  media_aluno, #String que vai para o arquivo
+    print(aluno, 'alcançou média' ,media_aluno, '\n')
+    resultado = aluno,  media_aluno, #String que vai para o arquivo
 
     arquivo = open("alunos.txt", "a") #Cria arquivo contendo média de todos os alunos
     arquivo.write(str(resultado,))
