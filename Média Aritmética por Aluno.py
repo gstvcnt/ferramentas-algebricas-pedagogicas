@@ -27,7 +27,7 @@ while not stop:
         print('\nOpa! O Aluno' ,aluno, 'ficou por meio ponto:' ,media_aluno, ' que tal tentar um arredondamento?\n')
         
     input('\nPressione ENTER para realizar o cálculo novamente \n')
-    os.system('cls' if os.name =='nt' else 'clear') #Limpa terminal, cls em Windows NT caso contrário "clear" em UNIX Like
+    os.system('cls' if os.name =='nt' else 'clear') #Limpa terminal
     
     print(aluno, 'alcançou média' ,media_aluno, '\n')
     resultado = aluno,  media_aluno, #String que vai para o arquivo
